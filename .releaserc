@@ -1,0 +1,13 @@
+{
+  "branches": [
+    "main",
+    {"name":"develop","pre-release":true}
+  ],
+  "repositoryUrl": "git@github.com:rayprogramming/terraform-aws-rayprogramming-cognito-auth.git",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github"
+  ],
+  "ci": true
+}
