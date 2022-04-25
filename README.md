@@ -43,9 +43,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_domain"></a> [domain](#input\_domain) | n/a | `any` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | n/a | `any` | n/a | yes |
-| <a name="input_zoneid"></a> [zoneid](#input\_zoneid) | n/a | `any` | n/a | yes |
+| <a name="input_domain"></a> [domain](#input\_domain) | The domain name to use | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Name of project | `string` | n/a | yes |
+| <a name="input_zoneid"></a> [zoneid](#input\_zoneid) | the zone\_id to create the domain under | `string` | n/a | yes |
 
 ## Outputs
 
