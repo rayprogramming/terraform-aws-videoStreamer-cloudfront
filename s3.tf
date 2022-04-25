@@ -28,7 +28,7 @@ resource "aws_s3_bucket_public_access_block" "bucket_pab" {
   restrict_public_buckets = true
 }
 
-data "template_file" "init" {
+data "template_file" "init" { #TODO: make modern and use templatefile function
   template = file("${path.module}/policy.tpl")
   vars = {
     domain     = var.domain
