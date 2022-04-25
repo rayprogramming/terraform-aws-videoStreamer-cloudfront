@@ -30,6 +30,10 @@ resource "aws_acm_certificate" "ssl" {
   subject_alternative_names = ["www.${var.domain}"]
   validation_method         = "DNS"
 
+  lifecycle {
+    create_before_destroy = true
+  }
+
   tags = {
     site = var.domain
   }
