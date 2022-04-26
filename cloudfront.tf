@@ -27,7 +27,7 @@ module "cdn" {
     s3_one = {
       domain_name = module.s3_one.s3_bucket_bucket_regional_domain_name
       s3_origin_config = {
-        origin_access_identity = "s3-${var.domain}"
+        origin_access_identity = "s3_bucket_one"
       }
     }
   }
