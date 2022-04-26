@@ -36,5 +36,3 @@ override.tf.json
 terraform.rc
 .terraform.lock.hcl
 *.zip
-builds/*
-node_install/*
