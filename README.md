@@ -32,6 +32,7 @@ This is the terraform cloudfront module for my video streaming application
 
 | Name | Type |
 |------|------|
+| [aws_ssm_parameter.cdn_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ssm_parameter) | resource |
 | [aws_wafv2_web_acl.waf_acl](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafv2_web_acl) | resource |
 | [random_pet.this](https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/pet) | resource |
 | [aws_canonical_user_id.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/canonical_user_id) | data source |
