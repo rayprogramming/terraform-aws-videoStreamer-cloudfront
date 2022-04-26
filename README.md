@@ -7,6 +7,7 @@ This is the terraform cloudfront module for my video streaming application
 | Name | Version |
 |------|---------|
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | 3.1.3 |
 | <a name="requirement_template"></a> [template](#requirement\_template) | 2.2.0 |
 
 ## Providers
@@ -15,7 +16,7 @@ This is the terraform cloudfront module for my video streaming application
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 4.0 |
 | <a name="provider_aws.east-1"></a> [aws.east-1](#provider\_aws.east-1) | ~> 4.0 |
-| <a name="provider_random"></a> [random](#provider\_random) | n/a |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.1.3 |
 
 ## Modules
 
@@ -32,7 +33,7 @@ This is the terraform cloudfront module for my video streaming application
 | Name | Type |
 |------|------|
 | [aws_wafv2_web_acl.waf_acl](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafv2_web_acl) | resource |
-| [random_pet.this](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet) | resource |
+| [random_pet.this](https://registry.terraform.io/providers/hashicorp/random/3.1.3/docs/resources/pet) | resource |
 | [aws_canonical_user_id.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/canonical_user_id) | data source |
 | [aws_cloudfront_log_delivery_canonical_user_id.cloudfront](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/cloudfront_log_delivery_canonical_user_id) | data source |
 | [aws_iam_policy_document.s3_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
