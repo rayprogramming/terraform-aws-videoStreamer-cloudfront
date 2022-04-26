@@ -3,5 +3,5 @@ output "name" {
 }
 
 output "fqdn" {
-  value = aws_route53_record.subdomain_root.fqdn
+  value = module.records.route53_record_fqdn
 }
