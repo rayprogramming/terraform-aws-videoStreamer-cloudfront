@@ -9,7 +9,7 @@ module "records" {
 
   records = [
     {
-      name = var.domain
+      name = ""
       type = "A"
       alias = {
         name    = module.cdn.cloudfront_distribution_domain_name
@@ -17,7 +17,7 @@ module "records" {
       }
     },
     {
-      name = "www.${var.domain}"
+      name = "www."
       type = "A"
       alias = {
         name    = module.cdn.cloudfront_distribution_domain_name
