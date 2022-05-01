@@ -5,8 +5,8 @@ module "acm" {
     aws = aws.east-1
   }
 
-  domain_name               = var.domain
-  zone_id                   = var.zone_id
-  subject_alternative_names = ["www.${var.domain}"]
+  domain_name               = var.domain != "" ? "${var.domain}.${data.aws_route53_zone.selected.name}" : data.aws_route53_zone.selected.name
+  zone_id                   = data.aws_route53_zone.selected.zone_id
+  subject_alternative_names = var.domain != "" ? ["www.${var.domain}.${data.aws_route53_zone.selected.name}"] : ["www.${data.aws_route53_zone.selected.name}"]
   wait_for_validation       = true
 }
