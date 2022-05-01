@@ -2,7 +2,7 @@ module "cdn" {
   source  = "terraform-aws-modules/cloudfront/aws"
   version = "~>2.9"
 
-  aliases                              = ["${var.domain}", "www.${var.domain}"]
+  aliases                              = var.domain != "" ? ["${var.domain}.${data.aws_route53_zone.selected.name}", "www.${var.domain}.${data.aws_route53_zone.selected.name}"] : ["${data.aws_route53_zone.selected.name}", "www.${data.aws_route53_zone.selected.name}"]
   comment                              = random_pet.this.id
   enabled                              = true
   is_ipv6_enabled                      = true
